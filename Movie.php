@@ -103,9 +103,9 @@ $movies[1]->set_vote(4.999999);
     <ul>
         <?php foreach ($movies as $movie) : ?>
             <li>
-                <h2><?= $movie->get_title() ?></h2>
-                <h3><?= $movie->get_director() ?></h3>
-                <h3><?= $movie->get_year() ?></h3>
+                <h2>Titolo: <?= $movie->get_title() ?></h2>
+                <h3>Regista: <?= $movie->get_director() ?></h3>
+                <h3>Anno: <?= $movie->get_year() ?></h3>
                 <?php if (!empty($movie->get_description())) : ?>
                     <h4>Descrizione:</h4>
                     <p><?= $movie->get_description() ?></p>
